@@ -13,7 +13,7 @@ def do_pack():
     filename = "web_static_" + datetime.strftime(datetime.now(),
                                                  "%Y%m%d%H%M%S") + ".tgz"
     try:
-        ret = local("tar -cvzf" + filename + ".tgz web_static", capture=True)
+        ret = local("tar -cvzf " + filename + " web_static", capture=True)
         return ret
     except:
         return None
