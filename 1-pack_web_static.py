@@ -9,11 +9,11 @@ from datetime import datetime
 
 def do_pack():
     """pack the files"""
-    local("mkdir -p versions", capture=False)
     filename = "web_static_" + datetime.strftime(datetime.now(),
                                                  "%Y%m%d%H%M%S") + ".tgz"
     try:
-        ret = local("tar -cvzf " + filename + " web_static", capture=True)
-        return ret
+        local("mkdir -p versions", capture=False)
+        local("tar -cvzf " + filename + " web_static")
+        return filename
     except:
         return None
