@@ -3,7 +3,7 @@
 Fabric script that generates a .tgz archive from the contents of the web_static
 """
 
-from Fabric import local
+from fabric import local
 from datetime import datetime
 
 
