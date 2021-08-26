@@ -13,8 +13,8 @@ def do_pack():
     filename = "web_static_" + datetime.strftime(datetime.now(),
                                                  "%Y%m%d%H%M%S") + ".tgz"
     try:
-        local("mkdir -p versions", capture=False)
-        local("tar -cvzf " + filename + " web_static")
+        local("mkdir -p versions")
+        local("tar -cvzf versions/" + filename + " web_static")
         return "versions/" + filename
     except:
         return None
