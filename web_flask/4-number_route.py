@@ -15,7 +15,7 @@ def home():
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """starts a Flask web application"""
-    return "HBNB!"
+    return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
