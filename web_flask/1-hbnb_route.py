@@ -9,13 +9,13 @@ app = Flask(__name__)
 @app.route("/", strict_slashes=False)
 def home():
     """starts a Flask web application"""
-    return "Hello HBTN!"
+    return "Hello HBNB!”
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """starts a Flask web application"""
-    return "HBTN!"
+    return "HBNB!"
 
 
 if __name__ == "__main__":
