@@ -33,12 +33,12 @@ def display_python_text(text="is cool"):
     return "Python " + text
 
 
-@app.route("/python/<text>", strict_slashes=False)
-@app.route("/python", strict_slashes=False)
+@app.route("/number/<int:n>", strict_slashes=False)
 def display_number(n):
     """starts a Flask web application"""
-    if type(n) is int
-        return n + " is a number"
+    if type(n) is int:
+        return "{} is a number".format(n)
+
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)
