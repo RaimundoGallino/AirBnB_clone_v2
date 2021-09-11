@@ -18,3 +18,11 @@
 -   [Flask](https://intranet.hbtn.io/rltoken/k2C-4UmlYXgA6oMgO7fLgg "Flask")
 -   [Jinja](https://intranet.hbtn.io/rltoken/fid5cMJKYMaRJqL60PlUew "Jinja")
 
+### Install Flask
+
+```
+$ pip3 install Flask
+
+```
+
+![](https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step3.png)
