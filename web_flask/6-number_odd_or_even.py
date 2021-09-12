@@ -47,7 +47,7 @@ def display_number_in_html(n):
 
 
 @app.route('/number_odd_or_even/<int:n>')
-def display_number_in_html(n):
+def display_n_in_html(n):
     """starts a Flask web application"""
     a = "even"
     if n % 2 != 0:
