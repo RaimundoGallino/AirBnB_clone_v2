@@ -64,3 +64,7 @@ class DBStorage:
         session_new = sessionmaker(bind=self.__engine, expire_on_commit=False)
         Session_reloaded = scoped_session(session_new)
         self.__session = Session_reloaded()
+
+    def close(self):
+        """method for deserializing the JSON file to objects"""
+        self.__session.remove()
