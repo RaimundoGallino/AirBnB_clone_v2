@@ -7,6 +7,7 @@ from models.state import State
 
 app = Flask(__name__)
 
+
 @app.teardown_appcontext
 def storage_close(a):
     """starts a Flask web application"""
@@ -19,5 +20,6 @@ def list_states():
     list_states = storage.all(State).values()
     return render_template('7-states_list.html', list_states=list_states)
 
+
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)
