@@ -14,11 +14,11 @@ def storage_close(a):
     storage.close()
 
 
-@app.route("/states_list", strict_slashes=False)
-def list_states():
-    """list_states"""
-    list_states = storage.all(State).values()
-    return render_template('7-states_list.html', list_states=list_states)
+@app.route('/states_list', strict_slashes=False)
+def states_li():
+    """ states list """
+    states = storage.all(State)
+    return render_template('7-states_list.html', states=states)
 
 
 if __name__ == "__main__":
